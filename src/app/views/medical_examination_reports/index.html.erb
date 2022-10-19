@@ -1,0 +1,18 @@
+<h2>診療連絡票一覧</h2>
+<table>
+  <tr>
+    <td>セル</td>
+    <td>セル</td>
+    <td>セル</td>
+  </tr>
+  <% @medical_examination_reports.each do |medical_examination_report| %>
+    <tr>
+      <td><%= medical_examination_report.fill_in_person %></td>
+      <td><%= medical_examination_report.consultation %></td>
+      <td><%= medical_examination_report.about_medicine %></td>
+      <td><%= medical_examination_report.remarks %></td>
+      <td><%= link_to "詳細", medical_examination_report_path(medical_examination_report) %></td>
+      <td><%= link_to "編集", edit_medical_examination_report_path(medical_examination_report) %></td>
+    </tr>
+  <% end %>
+</table>

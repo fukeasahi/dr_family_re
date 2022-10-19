@@ -1,0 +1,2 @@
+class MedicalExaminationReport < ApplicationRecord
+end

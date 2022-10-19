@@ -1,0 +1,11 @@
+<%= form_with model: medical_examination_report do |form| %>
+  <div><%= form.label :fill_in_person, "記入者" %></div>
+  <div><%= form.select :fill_in_person, ["患者", "家族", "医師"] %></div>
+  <div><%= form.label :consultation, "日頃の様子、気になる点、相談内容など" %></div>
+  <div><%= form.text_area :consultation, size: "60x10" %></div>
+  <div><%= form.label :about_medicine, "薬・医療材料について(残量や追加希望など)" %></div>
+  <div><%= form.text_area :about_medicine, size: "60x10" %></div>
+  <div><%= form.label :remarks, "備考" %></div>
+  <div><%= form.text_area :remarks, size: "60x10" %></div>
+  <div><%= form.submit "送信" %></div>
+<% end %>

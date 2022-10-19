@@ -1,0 +1,7 @@
+<div>詳細ページ</div>
+<div>記入者<%= @medical_examination_report.fill_in_person %></div>
+<div><%= @medical_examination_report.consultation %></div>
+<div>薬・医療材料について <%= @medical_examination_report.about_medicine %></div>
+<div>備考 <%= @medical_examination_report.remarks %></div>
+<%= link_to '一覧画面', medical_examination_reports_path %>
+<%= link_to "編集", edit_medical_examination_report_path(@medical_examination_report) %>
