@@ -1,0 +1,2 @@
+class PhysicalCondition < ApplicationRecord
+end

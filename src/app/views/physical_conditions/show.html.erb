@@ -1,0 +1,12 @@
+<h2>詳細ページ</h2>
+<%= @physical_condition.time_slot %>
+<%= @physical_condition.temperature %>
+<%= @physical_condition.high_blood_pressure %>
+<%= @physical_condition.low_blood_pressure %>
+<%= @physical_condition.pulse_rate %>
+<%= @physical_condition.oxygen_concentration %>
+<%= @physical_condition.blood_sugar_level %>
+<%= @physical_condition.insulin %>
+<%= @physical_condition.remarks %>
+<%= link_to "一覧", physical_conditions_path %>
+<%= link_to "編集", edit_physical_condition_path(@physical_condition) %>

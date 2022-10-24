@@ -11,6 +11,12 @@
   </head>
 
   <body>
+    <% if patient_signed_in? %>
+      <%= link_to "ログアウト", destroy_patient_session_path, method: :delete %>
+    <% else %>
+      <%= link_to "サインアップ", new_patient_registration_path %>
+      <%= link_to "ログイン", new_patient_session_path %>
+    <% end %>
     <%= yield %>
   </body>
 </html>

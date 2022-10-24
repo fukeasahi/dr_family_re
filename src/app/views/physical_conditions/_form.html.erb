@@ -1,0 +1,30 @@
+<%= form_with model: physical_condition do |form| %>
+  <div><%= form.label :time_slot, "時間帯" %></div>
+  <div><%= form.select :time_slot, ["朝", "昼", "夜"] %></div>
+
+  <div><%= form.label :temperature, "体温" %></div>
+  <div><%= form.number_field :temperature %></div>
+
+  <div><%= form.label :high_blood_pressure, "血圧（高）" %></div>
+  <div><%= form.number_field :high_blood_pressure %></div>
+
+  <div><%= form.label :low_blood_pressure, "血圧（低）" %></div>
+  <div><%= form.number_field :low_blood_pressure %></div>
+
+  <div><%= form.label :pulse_rate, "脈拍数" %></div>
+  <div><%= form.number_field :pulse_rate %></div>
+
+  <div><%= form.label :oxygen_concentration, "酸素濃度" %></div>
+  <div><%= form.number_field :oxygen_concentration %></div>
+
+  <div><%= form.label :blood_sugar_level, "血糖値" %></div>
+  <div><%= form.number_field :blood_sugar_level %></div>
+
+  <div><%= form.label :insulin, "インスリン" %></div>
+  <div><%= form.text_field :insulin %></div>
+
+  <div><%= form.label :remarks, "備考" %></div>
+  <div><%= form.text_area :remarks %></div>
+
+  <div><%= form.submit "保存" %></div>
+<% end %>
